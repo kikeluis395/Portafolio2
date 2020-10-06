@@ -1,0 +1,34 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.main-header {
+  width: 100vw;
+  height: 8rem;
+  background-color: rgb(32, 32, 131);
+  color:white;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-header .logo {
+  font-size: 5rem;
+  margin-left: 5rem;
+}
+.main-header .main-nav li{
+  display:inline-block;
+  margin-right: 5rem;
+  list-style: none;
+  background-color: rgb(77, 77, 243);
+  padding:1rem;
+  border-radius: 5px;
+}
+.main-header .main-nav a{
+  color:white;
+  text-decoration: none;
+  font-size: 2rem;
+}
