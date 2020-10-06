@@ -32,3 +32,23 @@ html {
   text-decoration: none;
   font-size: 2rem;
 }
+.main {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:3rem;
+  background-color: rgb(123, 185, 240);
+}
+.main h1{
+  font-size: 8rem;
+  margin-left:3rem;
+}
+.main img{
+  width:600px;
+  height: 100%;
+  margin-left: 10rem;
+  border-radius: 10px;
+}
+.main .word {
+  color:aqua;
+}
