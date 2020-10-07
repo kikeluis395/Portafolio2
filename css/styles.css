@@ -1,3 +1,10 @@
+/* Color Theme Swatches in Hex */
+.Arquitectura-1-hex { color: #011526; }
+.Arquitectura-2-hex { color: #2E4959; }
+.Arquitectura-3-hex { color: #688EA6; }
+.Arquitectura-4-hex { color: #88AABF; }
+.Arquitectura-5-hex { color: #F2D8C2; }
+
 * {
   padding: 0;
   margin: 0;
@@ -5,27 +12,34 @@
 }
 html {
   font-size: 62.5%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: #0F2027;
+  background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
+  background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
 }
 .main-header {
-  width: 100vw;
+  width: 70%;
+  margin: auto;
   height: 8rem;
-  background-color: rgb(32, 32, 131);
+  background-color:  #011526;
   color:white;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
 .main-header .logo {
-  font-size: 5rem;
+  font-size: 4rem;
   margin-left: 5rem;
 }
 .main-header .main-nav li{
   display:inline-block;
   margin-right: 5rem;
   list-style: none;
-  background-color: rgb(77, 77, 243);
   padding:1rem;
-  border-radius: 5px;
+  border-radius: 2px;
+  transition: .4s;
 }
 .main-header .main-nav a{
   color:white;
@@ -33,22 +47,53 @@ html {
   font-size: 2rem;
 }
 .main {
+  width: 70%;
+  margin: auto;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  padding:3rem;
-  background-color: rgb(123, 185, 240);
+  background: rgba(0,0,0,0.4);
 }
 .main h1{
-  font-size: 8rem;
+  font-size: 5rem;
   margin-left:3rem;
+  padding: 3rem;
+  color: white;
+  font-weight: lighter;
 }
 .main img{
-  width:600px;
+  width:500px;
+  margin-top: 2rem;
   height: 100%;
-  margin-left: 10rem;
-  border-radius: 10px;
 }
 .main .word {
-  color:aqua;
+  color: #688EA6;
+}
+.main-header .main-nav li:hover{
+  background-color:  #688EA6;
+}
+.portafolio {
+  width: 70%;
+  margin: auto;
+  background-color: #88AABF;
+}
+.portafolio .portafolio-title {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+}
+.portafolio .container-portafolio {
+  display: flex;
+  justify-content: center;
+  margin:3rem;
+}
+.portafolio div article {
+  margin: 2rem;
+}
+.portafolio div article figure {
+  height: 300px;
+}
+.portafolio .content-portafolio {
+  height: 80px;
+  margin: 2rem;
 }
