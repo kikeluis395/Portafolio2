@@ -6,15 +6,21 @@
 .Arquitectura-5-hex { color: #F2D8C2; }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,900;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fjalla One', sans-serif;
+  font-weight: normal;
+}
 html {
   font-size: 62.5%;
-  font-family:'Source Sans Pro', sans-serif;
-  font-weight: 300;
+}
+body {
+  background-color: rgb(226, 226, 226);
 }
 /* body {
   background: #0F2027;
@@ -22,22 +28,25 @@ html {
   background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
 } */
 .main-header {
-  width: 70%;
-  margin: auto;
-  height: 8rem;
+  height: 7rem;
   background-color:  #011526;
   color:white;
   display:flex;
   justify-content: space-between;
   align-items: center;
 }
+.container-logo {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
 .main-header .logo {
   font-size: 4rem;
-  margin-left: 5rem;
 }
 .main-header .main-nav li{
   display:inline-block;
-  margin-right: 5rem;
+  margin-left: 4rem;
   list-style: none;
   padding:1rem;
   border-radius: 2px;
@@ -49,24 +58,32 @@ html {
   font-size: 2rem;
 }
 .main {
+  
+  background-color: #1b2127;
+}
+.container {
   width: 70%;
- 
   margin: auto;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(0,0,0,0.4);
+  padding-bottom: 2px;
 }
 .main h1{
   font-size: 4rem;
   height: 300px;
-  margin-left:3rem;
   padding-top: 6rem;
   color: white;
-  font-weight: lighter;
+  letter-spacing: -1px;
+  line-height: 60px;
 }
-.main img{
-  width:300px;
+.main-img{
+  width:500px;
+  height: 300px;
+  background: url(/images/Portada.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
 }
 .main .word {
   color:#026fff;
@@ -74,25 +91,53 @@ html {
 .main-header .main-nav li:hover{
   background-color:  #688EA6;
 }
-.portafolio .content-portafolio {
-  width: 500px;
-  
-}
 .portafolio article{
   border: 1px solid gray;
   border-radius: 10px;
   margin-bottom: 2rem;
+  padding:3rem;
+  background-color: white;
 }
-/* .portafolio {
+.portafolio {
   width: 70%;
   margin: auto;
-  background-color: #88AABF;
+
 }
-.portafolio .portafolio-title {
-  font-size: 3rem;
-  text-align: center;
-  padding: 2rem;
+.portafolio-title {
+  font-size: 2rem;
+  padding: 4rem;
+  padding-left:0;
+  color: #0872ff;
+  font-weight: bold;
+  text-transform: uppercase;
+
 }
+.content-portafolio {
+  width: 500px;
+  line-height: 30px;
+  font-size: 2rem;
+}
+.portafolio .container-portafolio img{
+  width:500px;
+}
+.container-portafolio article {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.proyect-title {
+  font-size:2.4rem;
+  font-weight: bold;
+}
+.proyect-cursos {
+  font-weight: bolder;
+  margin-top: 5px;
+}
+.proyect-detalles {
+  font-size: 2.4rem;
+}
+
+/* 
+
 .portafolio .container-portafolio {
   display: flex;
   justify-content: center;
